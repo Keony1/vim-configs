@@ -2,7 +2,10 @@ syntax on
 set number
 set expandtab
 set tabstop=4
-let g:TerminusFocusReporting=0
+set smarttab
+set relativenumber
+set mouse=a
+set encoding=UTF-8
 filetype plugin indent on
 
 set nocompatible
@@ -17,10 +20,12 @@ Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tc50cal/vim-terminal'
 
 call plug#end()
 
-
+let g:TerminusFocusReporting=0
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_fixers = {'javascript': ['eslint', 'prettier'], 'typescript': ['eslint', 'prettier']}
